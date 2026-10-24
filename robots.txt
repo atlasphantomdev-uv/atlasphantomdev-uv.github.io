@@ -1,0 +1,9 @@
+User-agent: *
+
+# Host-root robots.txt for atlasphantomdev-uv.github.io.
+# The project site lives at /mandoubtawseel/ (repo: mandoubtawseel); Google only
+# reads robots.txt from the host root, so this file carries the Sitemap directive.
+# The sitemap is served from jsDelivr (same GitHub repo) because GSC's fetcher
+# fails on the Pages edge (GitHub Community #199426). Cross-host sitemaps are
+# protocol-legal when referenced from robots.txt and list only URLs of this host.
+Sitemap: https://cdn.jsdelivr.net/gh/atlasphantomdev-uv/mandoubtawseel@main/sitemap.xml
