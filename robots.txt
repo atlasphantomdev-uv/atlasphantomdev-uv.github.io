@@ -1,3 +1,12 @@
 User-agent: *
 
+# The site lives in a project Pages subfolder, and crawlers only read robots.txt
+# at the host root — /mandoubtawseel/robots.txt is never fetched. So the sitemap
+# is declared here.
+#
+# Two Sitemap lines on purpose: Google fetches the same-host index first (correct
+# canonical host, correct hreflang alternates), and falls back to the jsDelivr
+# mirror if the Pages edge returns a 5xx mid-crawl — which it has done, and is
+# why the mirror exists at all.
+Sitemap: https://atlasphantomdev-uv.github.io/mandoubtawseel/sitemap.xml
 Sitemap: https://cdn.jsdelivr.net/gh/atlasphantomdev-uv/mandoubtawseel@main/sitemap.xml
